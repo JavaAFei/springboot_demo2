@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  context-path: /girl
+girl:
+  cupSize: B
+  age: 17
+  content: "cupSize:${girl.cupSize},age:${girl.age}}"
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      show-sql: true
